@@ -1,0 +1,11 @@
+[user]
+	name = yxjxx
+	email = yangjing201111335@gmail.com
+[core]
+	editor = vim
+[credential]
+	helper = cache --timeout=3600
+[push]
+	default = simple
+[alias]
+	unstage = reset HEAD
