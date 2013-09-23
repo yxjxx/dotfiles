@@ -17,7 +17,7 @@ ln -s ~/Dropbox/dotfiles/.zshrc ~/.zshrc
 
 ```
 
-当然你可以在用git(github)双备份,同时进行版本控制,需要用到git的基本命令.这里就不讲了  
+当然你可以再用git(github)双备份,同时进行版本控制,需要用到git的基本命令.这里就不讲了  
 
 ```
 cd ~/Dropbox/dotfiles/
