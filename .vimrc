@@ -29,7 +29,7 @@ set foldmethod=syntax
 """"high light search 高亮查找结果   
 set hlsearch
 "set hls
-""""检索是忽略大小写
+""""检索时忽略大小写
 set ignorecase
 
 """""设置tab为4个空格
