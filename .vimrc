@@ -46,7 +46,7 @@ set writebackup
 """"设置无备份文件                           
 set nobackup 
 """"设置无临时文件                            
-" set noswapfile 
+set noswapfile 
 
 """ "关闭提示音                            
 set vb t_vb=
