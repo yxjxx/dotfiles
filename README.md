@@ -33,7 +33,7 @@ git init
 
 ```bash
 #!/bin/bash
-rm -rf ~/,vimrc 
+rm -rf ~/.vimrc 
 rm -rf ~/.zhsrc
 ln -s ~/Dropbox/dotfiles/.vimrc ~/.vimrc
 ln -s ~/Dropbox/dotfiles/.zshrc ~/.zshrc
