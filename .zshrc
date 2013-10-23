@@ -71,7 +71,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/yxj/.local/bin/
 
 
 
@@ -86,3 +86,9 @@ setopt nonomatch
 ##########
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+
+##powerline
+#if zsh command not found:powerline ,you may need to add ~/.local/bin/ to your PATH
+#下面这一行其实已经成功的把powerline应用到zsh中了,但是我觉得以前简单素雅的风格还好些,而zsh是每天打交道时间最长的了,所以就取消了
+#. /home/yxj/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh

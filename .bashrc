@@ -30,3 +30,6 @@ alias _='sudo'
 
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+#powerline 
+. /home/yxj/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh

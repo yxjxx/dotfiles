@@ -7,6 +7,8 @@
 """""""""""
 
 """""""""""""""""""""""基本设置
+""""be iMproved,启用不兼容模式
+set nocompatible               
 """"显示行号
 set nu
 "set number
@@ -23,7 +25,8 @@ syntax enable
 syntax on
 "syn on
 """"代码折叠 ,空格展开,zc折叠
-set foldmethod=syntax
+"set foldmethod=syntax
+set fdm=marker
 
 
 """"high light search 高亮查找结果   
@@ -63,8 +66,10 @@ set backspace=2
 """"代码匹配
 set showmatch
 
+
 """"总是显示状态栏
 set laststatus=2
+"set laststatus=1
 
 """"为光标所在行增加下划线
 set cursorline
@@ -185,7 +190,6 @@ inoremap } <ESC>:call RemoveNextDoubleChar('}')<CR>a
 ""2. modify .vimrc to configure bundle
 ""3. Launch vim, run :BundleInstall
 
-set nocompatible               " be iMproved
 filetype off                   " required!
 
 set rtp+=~/.vim/bundle/vundle/
@@ -207,6 +211,7 @@ Bundle 'gmarik/vundle'
 "Bundle 'FuzzyFinder'
 Bundle 'c.vim'
 Bundle 'instant-markdown.vim'
+Bundle 'molokai'
 " non github repos
 "Bundle 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (ie. when working on your own plugin)
@@ -231,6 +236,7 @@ filetype plugin indent on     " required!
 
 """"""""""""""""""""""""""""""""""""
 
+
 """""cvim plugin
 """""tutorial:http://www.thegeekstuff.com/2009/01/tutorial-make-vim-as-your-cc-ide-using-cvim-plugin/
 
@@ -240,3 +246,19 @@ filetype plugin on
 
 
 
+
+""""" display an incomplete command in the lower right
+"实际上是`set nocompatible`这一行导致的noshowcmd,所以你只需要将`set showcmd`放在`set nocompatible`之后就可以了
+set showcmd
+
+
+
+
+""powerline
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
+""set rtp+=/home/yxj/.local/lib/python2.7/site-packages/powerline/binding/vim
+set laststatus=2
+set noshowmode
+set encoding=utf-8
