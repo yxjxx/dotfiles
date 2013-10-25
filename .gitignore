@@ -8,3 +8,4 @@
 #restore.sh
 backup.sh
 restore.sh
+install.sh
