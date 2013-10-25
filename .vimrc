@@ -68,8 +68,8 @@ set showmatch
 
 
 """"总是显示状态栏
-set laststatus=2
-"set laststatus=1
+"在powerline那里配置了
+"set laststatus=2
 
 """"为光标所在行增加下划线
 set cursorline
@@ -262,3 +262,6 @@ python del powerline_setup
 set laststatus=2
 set noshowmode
 set encoding=utf-8
+set t_Co=256
+let g:Powerline_colorscheme='solarized256'
+let g:Powerline_symbols = 'fancy'
