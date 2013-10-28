@@ -109,7 +109,8 @@ set scrolloff=5
 
 """"修改主题,因为Linux Mint15自带的终端主题加上透明效果我已经非常喜欢了,所以就不再这里改了
 "colorscheme evening
-""colo molokai
+"colo molokai
+"colorscheme solarized
 
 """"map function buttons to commands  F2新建F3切换
 map <F2> :tabnew<CR>
@@ -145,6 +146,7 @@ Bundle 'gmarik/vundle'
 "Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 "Bundle 'tpope/vim-rails.git'
 "Bundle 'tomasr/molokai'
+"Bundle 'altercation/vim-colors-solarized'
 "开启目录树导航:help NERD_tree.txt for help
 Bundle 'scrooloose/nerdtree'
 "括号高亮
@@ -155,6 +157,7 @@ Bundle 'Valloric/YouCompleteMe'
 Bundle 'hdima/python-syntax'
 "快速批量加减注释
 Bundle 'scrooloose/nerdcommenter'
+Bundle 'Raimondi/delimitMate'
 " vim-scripts repos
 "Bundle 'L9'
 "Bundle 'FuzzyFinder'
@@ -188,6 +191,8 @@ filetype plugin indent on     " required!
 """""tutorial:http://www.thegeekstuff.com/2009/01/tutorial-make-vim-as-your-cc-ide-using-cvim-plugin/
 
 filetype plugin on
+let g:C_MapLeader  = ','
+
 
 """"""""""""
 
