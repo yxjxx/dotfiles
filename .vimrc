@@ -109,6 +109,7 @@ set scrolloff=5
 
 """"修改主题,因为Linux Mint15自带的终端主题加上透明效果我已经非常喜欢了,所以就不再这里改了
 "colorscheme evening
+""colo molokai
 
 """"map function buttons to commands  F2新建F3切换
 map <F2> :tabnew<CR>
@@ -206,12 +207,21 @@ Bundle 'gmarik/vundle'
 "Bundle 'Lokaltog/vim-easymotion'
 "Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 "Bundle 'tpope/vim-rails.git'
+"Bundle 'tomasr/molokai'
+"开启目录树导航:help NERD_tree.txt for help
+Bundle 'scrooloose/nerdtree'
+"括号高亮
+Bundle 'kien/rainbow_parentheses.vim' 
+"A code-completion engine for Vim
+Bundle 'Valloric/YouCompleteMe'
+"python syntax highlight
+Bundle 'hdima/python-syntax'
+"快速批量加减注释
+Bundle 'scrooloose/nerdcommenter'
 " vim-scripts repos
 "Bundle 'L9'
 "Bundle 'FuzzyFinder'
 Bundle 'c.vim'
-Bundle 'instant-markdown.vim'
-Bundle 'molokai'
 " non github repos
 "Bundle 'git://git.wincent.com/command-t.git'
 " git repos on your local machine (ie. when working on your own plugin)
@@ -265,3 +275,38 @@ set encoding=utf-8
 set t_Co=256
 let g:Powerline_colorscheme='solarized256'
 let g:Powerline_symbols = 'fancy'
+
+
+
+""kien/rainbow_parentheses.vim  括号高亮
+let g:rbpt_colorpairs = [
+    \ ['brown',       'RoyalBlue3'],
+    \ ['Darkblue',    'SeaGreen3'],
+    \ ['darkgray',    'DarkOrchid3'],
+    \ ['darkgreen',   'firebrick3'],
+    \ ['darkcyan',    'RoyalBlue3'],
+    \ ['darkred',     'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['brown',       'firebrick3'],
+    \ ['gray',        'RoyalBlue3'],
+    \ ['black',       'SeaGreen3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['Darkblue',    'firebrick3'],
+    \ ['darkgreen',   'RoyalBlue3'],
+    \ ['darkcyan',    'SeaGreen3'],
+    \ ['darkred',     'DarkOrchid3'],
+    \ ['red',         'firebrick3'],
+    \ ]
+
+let g:rbpt_max = 16
+let g:rbpt_loadcmd_toggle = 0
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
+
+"hdima/python-syntax
+let python_highlight_all = 1
+
+"scrooloose/nerdcommenter  部分快捷键和c.vim冲突了
+let mapleader = ","
