@@ -158,6 +158,11 @@ Bundle 'hdima/python-syntax'
 "快速批量加减注释
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'Raimondi/delimitMate'
+"markdown的即时预览
+Bundle 'suan/vim-instant-markdown'
+"现在用的这个插件(suan/vim-instant-markdown)还不支持.md后缀的文件(除了README.md);支持.mdown和.markdown
+"又安装了一个插件(tpope/vim-markdown)之后就可以支持.md后缀了
+Bundle 'tpope/vim-markdown'
 " vim-scripts repos
 "Bundle 'L9'
 "Bundle 'FuzzyFinder'
