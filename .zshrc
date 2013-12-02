@@ -1,8 +1,5 @@
-######################
 #   ~/.zshrc 
 #   zsh配置文件
-#2013/8/19 yxjxx
-######################
 #每次修改过后要运行#source ~/.zshrc使修改生效
 
 # Path to your oh-my-zsh configuration.
@@ -35,6 +32,13 @@ alias -s gz='tar -xzvf'
 alias -s tgz='tar -xzvf'
 alias -s zip='unzip'
 alias -s bz2='tar -xjvf'
+
+alias ag='sudo apt-get'
+alias inst='sudo apt-get -y install'
+alias search='apt-cache search'
+alias purge='sudo apt-get purge'
+alias update='sudo apt-get update'
+alias upgrade='sudo apt-get -u upgrade'
 ########
 
 # Set to this to use case-sensitive completion

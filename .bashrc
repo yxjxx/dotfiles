@@ -28,6 +28,13 @@ alias md='mkdir -p'
 alias _='sudo'
 
 
+alias ag='sudo apt-get'
+alias inst='sudo apt-get -y install'
+alias search='apt-cache search'
+alias purge='sudo apt-get purge'
+alias update='sudo apt-get update'
+alias upgrade='sudo apt-get -u upgrade'
+
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
