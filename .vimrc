@@ -70,6 +70,9 @@ nnoremap <C-l> gt
 nnoremap <C-h> gT
 nnoremap <leader>t : tabe<CR>
 
+"swap ; and :"
+nnoremap ; :
+nnoremap : ;
 
 " General ends}}}
 
