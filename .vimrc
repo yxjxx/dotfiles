@@ -150,16 +150,16 @@ let g:C_MapLeader  = ','
 """"""""""""
 
 ""powerline {{{
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
-""set rtp+=/home/yxj/.local/lib/python2.7/site-packages/powerline/binding/vim
-set laststatus=2
-set noshowmode
-set encoding=utf-8
-set t_Co=256
-let g:Powerline_colorscheme='solarized256'
-let g:Powerline_symbols = 'fancy'
+"python from powerline.vim import setup as powerline_setup
+"python powerline_setup()
+"python del powerline_setup
+"""set rtp+=/home/yxj/.local/lib/python2.7/site-packages/powerline/binding/vim
+"set laststatus=2
+"set noshowmode
+"set encoding=utf-8
+"set t_Co=256
+"let g:Powerline_colorscheme='solarized256'
+"let g:Powerline_symbols = 'fancy'
 
 " }}}
 
