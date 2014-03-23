@@ -1,0 +1,24 @@
+{
+    //Linux: ~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
+    "font_size": 15,
+
+    //cancle ignore "ignored_packages": ["Vintage"] to enable vim model
+    "ignored_packages":
+    [
+        ""
+    ],
+
+    //one tab equal 4 spaces
+    "tab_size": 4,
+    "translate_tabs_to_spaces": true,
+
+
+    "close_windows_when_empty": true,
+    "show_encoding": true,
+    "show_line_endings": true,
+
+    // Determines what character(s) are used to terminate each line in new files.
+    // Valid values are 'system' (whatever the OS uses), 'windows' (CRLF) and
+    // 'unix' (LF only).
+    "default_line_ending": "unix"
+}
