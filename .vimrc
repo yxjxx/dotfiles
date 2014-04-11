@@ -1,8 +1,8 @@
-"Here is yxj's .vimrc
-"seek help
-":verbose set xx : to show the place where xx finally setted ;e.g.:verbose showcmd
-":help xxx : show the usage of xxx ;e.g.:help showcmd
-":options : see the documentation
+" Here is yxj's .vimrc
+" seeking help
+" ':verbose set xx' : to show the place where xx finally setted ;e.g.':verbose showcmd'
+" ':help xxx' : show the usage of xxx ;e.g.':help showcmd'
+" ':options' : see the documentation
 
 "General {{{
 set nocompatible    " Disable vi compatibility
@@ -64,7 +64,7 @@ set scrolloff=5     "set scroll off line number
 map <F2> :tabnew<CR>
 map <F3> gt
 		   
-" config for tabs  为标签页进行的配置,通过Ctrl+h/l切换标签页
+" config for tabs  Ctrl+h/l to switchover tabs
 let mapleader = ','
 nnoremap <C-l> gt
 nnoremap <C-h> gT
@@ -79,6 +79,8 @@ nnoremap : ;
 
 
 "Vundle {{{
+" You can write these configs in a individual file maybe named
+" bundles.vim and add "source ~/.vim/bundles.vim".
 """"""vunble a plugin manager
 ""1. git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 ""2. modify .vimrc to configure bundle
@@ -137,6 +139,8 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'Raimondi/delimitMate'
 " make vim a C IDE
 Bundle 'c.vim'
+" vim youdao translater
+Bundle 'ianva/vim-youdao-translater'
 
 
 "yxj's plugin config and use tips 
@@ -195,3 +199,12 @@ let python_highlight_all = 1
 
 "scrooloose/nerdcommenter  部分快捷键和c.vim冲突了
 let mapleader = ","
+
+" vim-youdao-translater config
+" first you need sudo pip install requests.
+" usage normal mode press Ctrl+t will translate the word under the cursor.
+" in visual mode also press Ctrl+t to translate the block you choosed.
+" press <leader>yd the input your word.
+vnoremap <silent> <C-T> <Esc>:Ydv<CR>
+nnoremap <silent> <C-T> <Esc>:Ydc<CR>
+noremap <leader>yd :Yde<CR>
