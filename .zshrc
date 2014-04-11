@@ -1,6 +1,4 @@
-#   ~/.zshrc 
-#   zsh配置文件
-#每次修改过后要运行#source ~/.zshrc使修改生效
+#run 'source ~/.zshrc' in terminal or reopen your terminal after modify it everytime.
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
@@ -14,7 +12,7 @@ ZSH_THEME="robbyrussell"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-#####别名设置
+#####alias settings
 alias e='exit'
 alias cls='clear'
 alias ll='ls -l'
@@ -24,11 +22,11 @@ alias ci='vim'
 alias lm='ls -al | more'
 alias chrome='google-chrome'
 alias py='python'
-alias -s md=mdcharm   #在命令行直接输入后缀为 md 的文件名，会在 mdcharm 中打开
-alias -s c=vim         #在命令行直接输入后缀为 c 的文件名，会在 vi 中打开,下类似
-alias -s html=sublime
-alias -s css=sublime
-alias -s py=sublime
+alias -s md=mdcharm   #In the terminal,when you input a filename end with .md it will be opened in mdcharm
+alias -s c=vim
+alias -s html=subl
+alias -s css=subl
+alias -s py=subl
 alias -s gz='tar -xzvf'
 alias -s tgz='tar -xzvf'
 alias -s zip='unzip'
@@ -71,7 +69,7 @@ alias upgrade='sudo apt-get -u upgrade'
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git autojump autopep8 python)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -95,5 +93,5 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 ##powerline
 #if zsh command not found:powerline ,you may need to add ~/.local/bin/ to your PATH
-#下面这一行其实已经成功的把powerline应用到zsh中了,但是我觉得以前简单素雅的风格还好些,而zsh是每天打交道时间最长的了,所以就取消了
+#I prefer not to use powerline in zsh ,so I comment the next line out.
 #. /home/yxj/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
