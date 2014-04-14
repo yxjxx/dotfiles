@@ -42,7 +42,7 @@ set backspace=2
 set showmatch
 
 
-"set laststatus=2 "show status alltime;set in powerline
+"set laststatus=2   "show status alltime;set in powerline
 
 set cursorline      "add a line under the cursor
 
@@ -79,79 +79,42 @@ nnoremap : ;
 
 
 "Vundle {{{
-" You can write these configs in a individual file maybe named
-" bundles.vim and add "source ~/.vim/bundles.vim".
-""""""vunble a plugin manager
-""1. git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-""2. modify .vimrc to configure bundle
-""3. Launch vim, run :BundleInstall
-"
-" Brief help
-" :BundleList          - list configured bundles
-" :BundleInstall(!)    - install(update) bundles
-" :BundleSearch(!) foo - search(or refresh cache first) for foo
-" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
-"
-" see :h vundle for more details or wiki for FAQ
-" NOTE: comments after Bundle command are not allowed..
-
-filetype off                   " required!
-
+filetype off  " required!
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-
-" let Vundle manage Vundle
-" required! 
 Bundle 'gmarik/vundle'
+filetype plugin indent on  " required!
 
-" My Bundles here:
-"
-" original repos on github
-"Bundle 'tpope/vim-fugitive'
-"Bundle 'Lokaltog/vim-easymotion'
-"Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-"Bundle 'tpope/vim-rails.git'
-"Bundle 'tomasr/molokai'
-"Bundle 'altercation/vim-colors-solarized'
-" vim-scripts repos
-"Bundle 'L9'
-"Bundle 'FuzzyFinder'
-" non github repos
-"Bundle 'git://git.wincent.com/command-t.git'
-" git repos on your local machine (ie. when working on your own plugin)
-"Bundle 'file:///Users/gmarik/path/to/plugin'
-" ...
-
-filetype plugin indent on     " required!
-
-
-"yxj's pulgin
-"开启目录树导航:help NERD_tree.txt for help
-Bundle 'scrooloose/nerdtree'
-"括号高亮
-Bundle 'kien/rainbow_parentheses.vim' 
-"A code-completion engine for Vim
-Bundle 'Valloric/YouCompleteMe'
-"python syntax highlight
-Bundle 'hdima/python-syntax'
-"快速批量加减注释
-Bundle 'scrooloose/nerdcommenter'
 Bundle 'Raimondi/delimitMate'
-" make vim a C IDE
-Bundle 'c.vim'
-" vim youdao translater
-Bundle 'ianva/vim-youdao-translater'
+
+" nerdtree{{{
+"':help NERD_tree.txt' for help
+Bundle 'scrooloose/nerdtree'
+
+" nerdtree ends}}}
+
+" YouCompleteMe{{{
+
+Bundle 'Valloric/YouCompleteMe'
+
+"YouCompleteMe ends}}}
+
+" python syntax highlight{{{
+Bundle 'hdima/python-syntax'
+
+let python_highlight_all = 1
+
+"python-syntax ends}}}
 
 
-"yxj's plugin config and use tips 
-"cvim plugin
-"""""tutorial:http://www.thegeekstuff.com/2009/01/tutorial-make-vim-as-your-cc-ide-using-cvim-plugin/
+
+" make vim a C IDE{{{
+Bundle 'c.vim' 
 
 filetype plugin on
 let g:C_MapLeader  = ','
 
-
-""""""""""""
+" c.vim end }}}
 
 ""powerline {{{
 "python from powerline.vim import setup as powerline_setup
@@ -167,7 +130,10 @@ let g:C_MapLeader  = ','
 
 " }}}
 
-""kien/rainbow_parentheses.vim  括号高亮
+
+"highlight brackets {{{
+Bundle 'kien/rainbow_parentheses.vim'
+
 let g:rbpt_colorpairs = [
     \ ['brown',       'RoyalBlue3'],
     \ ['Darkblue',    'SeaGreen3'],
@@ -194,17 +160,23 @@ au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
-"hdima/python-syntax
-let python_highlight_all = 1
+"parenthese.vim ends}}}
 
-"scrooloose/nerdcommenter  部分快捷键和c.vim冲突了
+
+
+"scrooloose/nerdcommenter{{{
+Bundle 'scrooloose/nerdcommenter'
+
 let mapleader = ","
 
-" vim-youdao-translater config
-" first you need sudo pip install requests.
-" usage normal mode press Ctrl+t will translate the word under the cursor.
-" in visual mode also press Ctrl+t to translate the block you choosed.
-" press <leader>yd the input your word.
+" nerdcommenter ends}}}
+
+
+" vim youdao translater{{{
+Bundle 'ianva/vim-youdao-translater'
+
 vnoremap <silent> <C-T> <Esc>:Ydv<CR>
 nnoremap <silent> <C-T> <Esc>:Ydc<CR>
 noremap <leader>yd :Yde<CR>
+
+" vim-youdao-translater ends}}}
