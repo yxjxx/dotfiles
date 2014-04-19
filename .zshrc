@@ -26,11 +26,12 @@ alias -s md=mdcharm   #In the terminal,when you input a filename end with .md it
 alias -s c=vim
 alias -s html=subl
 alias -s css=subl
-alias -s py=subl
 alias -s gz='tar -xzvf'
 alias -s tgz='tar -xzvf'
 alias -s zip='unzip'
 alias -s bz2='tar -xjvf'
+alias db='dropbox'
+alias dbs='dropbox status'
 
 alias ag='sudo apt-get'
 alias inst='sudo apt-get -y install'
