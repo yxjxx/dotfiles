@@ -159,3 +159,8 @@ nnoremap <silent> <C-T> <Esc>:Ydc<CR>
 noremap <leader>yd :Yde<CR>
 
 " vim-youdao-translater ends}}}
+
+" vim-gitgutter{{{
+Bundle 'airblade/vim-gitgutter' 
+
+" }}}
