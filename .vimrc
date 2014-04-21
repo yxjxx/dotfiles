@@ -164,9 +164,10 @@ Bundle 'airblade/vim-gitgutter'
 " }}}
 
 " vim-indent-guides{{{
-Bundle 'nathanaelkane/vim-indent-guides'
+" not work well in terminal.
+"Bundle 'nathanaelkane/vim-indent-guides'
 
-let g:indent_guides_enable_on_vim_startup = 1
+"let g:indent_guides_enable_on_vim_startup = 1
 " vim-indent-guides ends}}}
 
 " vim-surround{{{
