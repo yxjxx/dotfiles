@@ -60,15 +60,13 @@ set scrolloff=5     "set scroll off line number
 "colo molokai
 "colorscheme solarized
 
-" map function buttons to commands  F2:new F3:switch
-map <F2> :tabnew<CR>
-map <F3> gt
-		   
-" config for tabs  Ctrl+h/l to switchover tabs
+" config for tabs F3 or Ctrl+h/l to switch tabs;F2/,t new tab
 let mapleader = ','
 nnoremap <C-l> gt
 nnoremap <C-h> gT
 nnoremap <leader>t : tabe<CR>
+map <F2> :tabnew<CR>
+map <F3> gt
 
 "swap ; and :"
 nnoremap ; :
@@ -86,9 +84,12 @@ filetype plugin indent on  " required!
 
 Bundle 'Raimondi/delimitMate'
 
-" nerdtree{{{
+" nerdtree nerdtree-tabs{{{
 "':help NERD_tree.txt' for help
 Bundle 'scrooloose/nerdtree'
+Bundle 'jistr/vim-nerdtree-tabs'
+
+map <Leader>n <plug>NERDTreeTabsToggle<CR>
 
 " nerdtree ends}}}
 
@@ -150,11 +151,11 @@ Bundle 'scrooloose/nerdcommenter'
 " nerdcommenter ends}}}
 
 " vim youdao translater{{{
-Bundle 'ianva/vim-youdao-translater'
+"Bundle 'ianva/vim-youdao-translater'
 
-vnoremap <silent> <C-T> <Esc>:Ydv<CR>
-nnoremap <silent> <C-T> <Esc>:Ydc<CR>
-noremap <leader>yd :Yde<CR>
+"vnoremap <silent> <C-T> <Esc>:Ydv<CR>
+"nnoremap <silent> <C-T> <Esc>:Ydc<CR>
+"noremap <leader>yd :Yde<CR>
 
 " vim-youdao-translater ends}}}
 
