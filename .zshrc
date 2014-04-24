@@ -70,7 +70,7 @@ alias upgrade='sudo apt-get -u upgrade'
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git autojump autopep8 python)
+plugins=(git autojump autopep8 python sudo z web-search)
 
 source $ZSH/oh-my-zsh.sh
 
