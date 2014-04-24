@@ -181,3 +181,8 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'tpope/vim-surround'
 
 " vim-surround ends}}}
+
+" cmdline-completion{{{
+Bundle 'vim-scripts/cmdline-completion'
+
+" cmdline-completion ends}}}
