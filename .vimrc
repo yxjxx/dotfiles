@@ -88,8 +88,14 @@ Bundle 'Raimondi/delimitMate'
 "':help NERD_tree.txt' for help
 Bundle 'scrooloose/nerdtree'
 Bundle 'jistr/vim-nerdtree-tabs'
+Bundle 'Xuyuanp/git-nerdtree'
 
 map <Leader>n <plug>NERDTreeTabsToggle<CR>
+"autocmd vimenter * NERDTree
+let g:nerdtree_tabs_open_on_console_startup=1
+let NERDTreeShowHidden=1
+let NERDTreeShowBookmarks=1
+let g:NERDTreeUseSimpleIndicator=1
 
 " nerdtree ends}}}
 
