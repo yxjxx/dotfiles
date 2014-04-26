@@ -186,3 +186,9 @@ Bundle 'tpope/vim-surround'
 Bundle 'vim-scripts/cmdline-completion'
 
 " cmdline-completion ends}}}
+
+" ag.vim {{{
+Bundle 'rking/ag.vim'
+Bundle 'dyng/ctrlsf.vim'
+
+" ag.vim ends}}}
