@@ -86,12 +86,12 @@ Bundle 'Raimondi/delimitMate'
 
 " nerdtree nerdtree-tabs{{{
 "':help NERD_tree.txt' for help
-"Bundle 'scrooloose/nerdtree'
-Bundle 'Xuyuanp/git-nerdtree'
+Bundle 'scrooloose/nerdtree'
+"Bundle 'Xuyuanp/git-nerdtree'
 Bundle 'jistr/vim-nerdtree-tabs'
 
 map <Leader>n <plug>NERDTreeTabsToggle<CR>
-let g:nerdtree_tabs_open_on_console_startup=1
+"let g:nerdtree_tabs_open_on_console_startup=1
 let NERDTreeShowHidden=1
 let NERDTreeShowBookmarks=1
 let g:NERDTreeUseSimpleIndicator=1
@@ -191,3 +191,5 @@ Bundle 'rking/ag.vim'
 Bundle 'dyng/ctrlsf.vim'
 
 " ag.vim ends}}}
+
+Bundle 'ervandew/supertab'
