@@ -193,3 +193,4 @@ Bundle 'dyng/ctrlsf.vim'
 " ag.vim ends}}}
 
 Bundle 'ervandew/supertab'
+Bundle 'yonchu/accelerated-smooth-scroll'
