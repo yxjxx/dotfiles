@@ -194,3 +194,4 @@ Bundle 'dyng/ctrlsf.vim'
 
 Bundle 'ervandew/supertab'
 Bundle 'yonchu/accelerated-smooth-scroll'
+Bundle 'scrooloose/syntastic'
