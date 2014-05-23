@@ -50,7 +50,7 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git autojump autopep8 python sudo z web-search)
+plugins=(git autojump autopep8 python sudo z web-search osx)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -76,8 +76,6 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 ###################################################
-
-plugins=(git autojump autopep8 python sudo z web-search)
 
 #####alias settings{{{
 
