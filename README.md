@@ -1,7 +1,7 @@
 dotfiles backup on github
 ================
 
-Here is some config file of my Linux Mint16 development.
+Here is some config file of my Linux Mint16 and Mac OS X development.
 
 -------------------
 ###Backup  
@@ -23,7 +23,7 @@ ln -s ~/Dropbox/dotfiles/.zshrc ~/.zshrc
 ```
 cd ~/Dropbox/dotfiles/
 git init 
-git add ...
+git add <files>
 git commit
 git push origin master
 ...
@@ -45,13 +45,14 @@ rm -rf ~/.zshrc
 rm -rf ~/.bashrc
 rm -rf ~/.gitconfig
 rm -rf ~/.tmux.conf
-rm -rf ~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
 ln -s ~/Dropbox/dotfiles/.vimrc ~/.vimrc
 ln -s ~/Dropbox/dotfiles/.zshrc ~/.zshrc
 ln -s ~/Dropbox/dotfiles/.bashrc ~/.bashrc
 ln -s ~/Dropbox/dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/Dropbox/dotfiles/.tmux.conf ~/.tmux.conf
-ln -s ~/Dropbox/dotfiles/Preferences.sublime-settings ~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
 ```
 
+-------------------------
 
+###Sync sublime packages and settings
+using [Package Sync](https://sublime.wbond.net/packages/Package%20Syncing)
