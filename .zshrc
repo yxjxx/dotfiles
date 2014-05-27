@@ -9,6 +9,7 @@ export ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="robbyrussell"
 
+#Example config{{{
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
@@ -50,6 +51,7 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
+# }}}
 plugins=(git autojump autopep8 python sudo z web-search osx)
 
 source $ZSH/oh-my-zsh.sh
@@ -61,6 +63,9 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
+# Chinese Support
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -103,6 +108,7 @@ alias search='apt-cache search'
 alias purge='sudo apt-get purge'
 alias update='sudo apt-get update'
 alias upgrade='sudo apt-get -u upgrade'
+
 ########}}}
 
 ########### try to avoid the 'zsh: no matches found...'
@@ -119,6 +125,30 @@ setopt nonomatch
 #
 #}}}
 
-####autojump for linux
+##autojump for linux
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
-#############
+
+
+case `uname` in
+    Darwin)
+        #mysql alias
+        alias mysql='/usr/local/mysql/bin/mysql'
+        alias mysqladmin='/usr/local/mysql/bin/mysqladmin'
+
+        #solution for errors in  install MySQL-python
+        PATH="/usr/local/mysql/bin:${PATH}"
+        export PATH
+        export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/
+        #the vaule of the 2 lines below may vary according to your mysql version
+        export VERSIONER_PYTHON_PERFER_64_BIT=yes
+        export VERSIONER_PYTHON_PERFER_32_BIT=no
+
+        export PYTHONPATH="/usr/local/lib/python2.7/site-packages/:${PYTHONPATH}"
+        #when import MySQLdb error: image not found;execute 2 lines command below
+        #sudo ln -s /usr/local/mysql/lib/libmysqlclient.18.dylib /usr/lib/libmysqlclient.18.dylib
+        #sudo ln -s /usr/local/mysql/lib /usr/local/mysql/lib/mysql
+        ;;
+    Linux)
+        #alias ls='ls -al | more'
+        ;;
+esac
