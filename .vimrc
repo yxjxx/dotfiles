@@ -17,7 +17,7 @@ set foldmethod=marker "unflod your code with 'space' ,flod with 'zc' "
 set hlsearch        " highlight search result
 set ignorecase      " ignore case when searching"
 
-set expandtab       " set one equal 4 space
+set expandtab       " set one tab equal 4 space
 set shiftwidth=4
 set tabstop=4
 
