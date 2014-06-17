@@ -138,7 +138,7 @@ case `uname` in
         #solution for errors in  install MySQL-python
         PATH="/usr/local/mysql/bin:${PATH}"
         export PATH
-        export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/
+        #export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/
         #the vaule of the 2 lines below may vary according to your mysql version
         export VERSIONER_PYTHON_PERFER_64_BIT=yes
         export VERSIONER_PYTHON_PERFER_32_BIT=no
