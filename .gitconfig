@@ -4,6 +4,7 @@
 [core]
 	editor = vim
 	excludesfile = /Users/yxj/.gitignore_global
+	quotepath = false
 [credential]
 	helper = cache --timeout=3600
 [push]
