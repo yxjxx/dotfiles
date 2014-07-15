@@ -134,6 +134,8 @@ case `uname` in
         #mysql alias
         alias mysql='/usr/local/mysql/bin/mysql'
         alias mysqladmin='/usr/local/mysql/bin/mysqladmin'
+        #alias for macvim
+        alias vim='mvim -v'
 
         #solution for errors in  install MySQL-python
         PATH="/usr/local/mysql/bin:${PATH}"
