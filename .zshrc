@@ -119,6 +119,7 @@ setopt nonomatch
 #if zsh command not found:powerline ,you may need to add ~/.local/bin/ to your PATH
 #I prefer not to use powerline in zsh ,so I comment the next line out.
 #. /home/yxj/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+#. /Library/Python/2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
 #my zsh tips{{{
 #zsh_stats : show the percentage of your historical command.
