@@ -195,6 +195,11 @@ Bundle 'dyng/ctrlsf.vim'
 
 Bundle 'ervandew/supertab'
 Bundle 'scrooloose/syntastic'
+Bundle 'fholgado/minibufexpl.vim'
+Bundle 'vim-scripts/taglist.vim'
+Bundle 'mbbill/undotree'
+Bundle 'vim-scripts/gdbmgr'
+Bundle 'vim-scripts/better-snipmate-snippet'
 
 """powerline{{{
 python from powerline.vim import setup as powerline_setup
