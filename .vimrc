@@ -92,7 +92,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'jistr/vim-nerdtree-tabs'
 
 map <Leader>n <plug>NERDTreeTabsToggle<CR>
-"let g:nerdtree_tabs_open_on_console_startup=1
+let g:nerdtree_tabs_open_on_console_startup=0
 let NERDTreeShowHidden=1
 let NERDTreeShowBookmarks=1
 let g:NERDTreeUseSimpleIndicator=1
@@ -212,4 +212,5 @@ set encoding=utf-8
 set t_Co=256
 let g:Powerline_colorscheme='solarized256'
 let g:Powerline_symbols='fancy'
+set guifont=Monaco\ for\ Powerline:h13
 """}}}
