@@ -101,6 +101,7 @@ alias -s zip='unzip'
 alias -s bz2='tar -xjvf'
 alias db='dropbox'
 alias dbs='dropbox status'
+alias activate='source ~/venv/bin/activate'
 
 alias ag='sudo apt-get'
 alias inst='sudo apt-get -y install'
