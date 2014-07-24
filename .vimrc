@@ -214,3 +214,13 @@ let g:Powerline_colorscheme='solarized256'
 let g:Powerline_symbols='fancy'
 set guifont=Monaco\ for\ Powerline:h13
 """}}}
+
+let os=substitute(system('uname'), '\n', '', '')
+
+if os == 'Darwin'
+    " settings for Mac OS X
+
+elseif os == 'Linux'
+    " settings for Linux
+
+endif
