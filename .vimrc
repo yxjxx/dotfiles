@@ -6,11 +6,11 @@
 
 "General {{{
 set nocompatible    " Disable vi compatibility
-set showcmd         " show inputing cmd lower right corner;shoudle be placed under 'set nocmpatible'             
+set showcmd         " show inputing cmd lower right corner;shoudle be placed under 'set nocmpatible'
 set number          " show row number
 set bg=dark         "set background"
 set autoindent
-syntax enable       "syntax highlight 
+syntax enable       "syntax highlight
 syntax on
 
 set foldmethod=marker "unflod your code with 'space' ,flod with 'zc' "
@@ -23,24 +23,23 @@ set tabstop=4
 
 set cindent         "set indent like C language"
 
-set writebackup  
-set nobackup 
-"set noswapfile 
+set writebackup
+set nobackup
+"set noswapfile
 set directory=/tmp//    " prepend(^=) $HOME/.tmp/ to default path; use full path as backup filename(//)
 
 "set undofile
 "set undodir=~/.vim/undo
 
-" novisualbell                            
+" novisualbell
 set vb t_vb=
-set novisualbell 
+set novisualbell
 
 set clipboard+=unnamed
-      
-set backspace=2	
+
+set backspace=2
 
 set showmatch
-
 
 "set laststatus=2   "show status alltime;set in powerline
 
@@ -113,7 +112,7 @@ let python_highlight_all = 1
 "python-syntax ends}}}
 
 " make vim a C IDE{{{
-Bundle 'c.vim' 
+Bundle 'c.vim'
 
 filetype plugin on
 let g:C_MapLeader  = ','
@@ -166,7 +165,7 @@ Bundle 'scrooloose/nerdcommenter'
 " vim-youdao-translater ends}}}
 
 " vim-gitgutter{{{
-Bundle 'airblade/vim-gitgutter' 
+Bundle 'airblade/vim-gitgutter'
 
 " }}}
 
