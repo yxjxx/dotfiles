@@ -71,6 +71,9 @@ map <F3> gt
 nnoremap ; :
 nnoremap : ;
 
+" map j to gj and k to gk, so line navigation ingores line wrap
+nnoremap j gj
+nnoremap k gk
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
 
