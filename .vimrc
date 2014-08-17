@@ -205,6 +205,24 @@ Bundle 'vim-scripts/taglist.vim'
 Bundle 'mbbill/undotree'
 Bundle 'vim-scripts/gdbmgr'
 Bundle 'vim-scripts/better-snipmate-snippet'
+Bundle 'parkr/vim-jekyll'
+
+"""vim-jekyll{{{
+let g:jekyll_post_dirs = ['_post', '_source/_posts']
+let g:jekyll_post_extension = '.md'
+let g:jekyll_post_filetype = 'liquid'
+let g:jekyll_post_template = [
+    \ '---',
+    \ 'layout: post',
+    \ 'title: "JEKYLL_TITLE"',
+    \ 'quote: ',
+    \ 'image: ',
+    \ 'date: "JEKYLL_DATE"',
+    \ '---',
+    \ '']
+let g:jekyll_site_dir = '_site'
+"""}}}
+
 
 """powerline{{{
 python from powerline.vim import setup as powerline_setup
