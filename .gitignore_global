@@ -46,3 +46,8 @@ Thumbs.db
 *~
 *.bak
 *.swp
+
+# JetBrains CLion #
+#######################
+.idea/
+CMakeLists.txt
