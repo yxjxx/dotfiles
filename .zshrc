@@ -156,3 +156,14 @@ case `uname` in
         #alias ls='ls -al | more'
         ;;
 esac
+
+#
+# Qu Jing iTerm & Terminal Setup Script
+# version 0.3
+# Felix Ding
+# July 12, 2014 @Costa
+#
+function start_qujing {
+  export http_proxy='theironislands.f.getqujing.net:39503'
+  export HTTPS_PROXY='theironislands.f.getqujing.net:39503'
+}
