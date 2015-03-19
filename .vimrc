@@ -57,7 +57,7 @@ set scrolloff=5     "set scroll off line number
 
 
 "colo molokai
-colorscheme solarized
+"colorscheme solarized
 
 " config for tabs F3 or Ctrl+h/l to switch tabs;F2/,t new tab
 let mapleader = ','
@@ -82,10 +82,9 @@ cmap w!! w !sudo tee > /dev/null %
 
 "Vundle {{{
 filetype off  " required!
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
 Bundle 'gmarik/vundle'
-filetype plugin indent on  " required!
 
 Bundle 'Raimondi/delimitMate'
 "Bundle 'altercation/vim-colors-solarized'
@@ -206,6 +205,9 @@ Bundle 'mbbill/undotree'
 Bundle 'vim-scripts/gdbmgr'
 Bundle 'vim-scripts/better-snipmate-snippet'
 Bundle 'parkr/vim-jekyll'
+
+call vundle#end()   "required
+filetype plugin indent on  " required!
 
 """vim-jekyll{{{
 let g:jekyll_post_dirs = ['_post', '_source/_posts']
