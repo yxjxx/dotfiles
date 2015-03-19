@@ -19,3 +19,4 @@
 "colo oceanblack
 colo evening
 
+set guifont=PowerlineSymbols:h12
