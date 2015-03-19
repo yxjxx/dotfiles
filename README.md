@@ -45,11 +45,15 @@ rm -rf ~/.zshrc
 rm -rf ~/.bashrc
 rm -rf ~/.gitconfig
 rm -rf ~/.tmux.conf
+rm -rf ~/.gitignore
+rm -rf ~/.gitignore_global
 ln -s ~/Dropbox/dotfiles/.vimrc ~/.vimrc
 ln -s ~/Dropbox/dotfiles/.zshrc ~/.zshrc
 ln -s ~/Dropbox/dotfiles/.bashrc ~/.bashrc
 ln -s ~/Dropbox/dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/Dropbox/dotfiles/.tmux.conf ~/.tmux.conf
+ln -s ~/Dropbox/dotfiles/.gitignore ~/.gitignore
+ln -s ~/Dropbox/dotfiles/.gitignore_global ~/.gitignore_global
 ```
 
 -------------------------
