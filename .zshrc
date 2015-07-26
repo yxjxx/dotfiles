@@ -170,3 +170,13 @@ zle -N zle-line-init
 # use ctrl+t to toggle autosuggestions(hopefully this wont be needed as
 # zsh-autosuggestions is designed to be unobtrusive)
 bindkey '^T' autosuggest-toggle
+
+#fortune
+echo
+echo "=============== Quote Of The Day ==============="
+echo
+fortune
+echo
+echo "================================================"
+echo
+
