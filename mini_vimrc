@@ -6,6 +6,8 @@ set autoindent
 set cindent
 syntax enable
 syntax on
+filetype indent on
+set smartindent
 
 set hlsearch
 set ignorecase
@@ -32,3 +34,5 @@ nnoremap : ;
 nnoremap j gj
 nnoremap k gk
 cmap w!! w !sudo tee > /dev/null %
+
+nnoremap <C-l> gt

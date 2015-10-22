@@ -1,17 +1,13 @@
-" Here is yxj's .vimrc
-" seeking help
-" ':verbose set xx' : to show the place where xx finally setted ;e.g.':verbose showcmd'
-" ':help xxx' : show the usage of xxx ;e.g.':help showcmd'
-" ':options' : see the documentation
-
-"General {{{
+"General{{{
 set nocompatible    " Disable vi compatibility
-set showcmd         " show inputing cmd lower right corner;shoudle be placed under 'set nocmpatible'
+set showcmd         " show inputing cmd lower right corner;should be placed under 'set nocmpatible'
 set number          " show row number
 set bg=dark         "set background"
 set autoindent
 syntax enable       "syntax highlight
 syntax on
+filetype indent on
+set smartindent
 
 set foldmethod=marker "unflod your code with 'space' ,flod with 'zc' "
 set hlsearch        " highlight search result
@@ -62,7 +58,7 @@ set scrolloff=5     "set scroll off line number
 " config for tabs F3 or Ctrl+h/l to switch tabs;F2/,t new tab
 let mapleader = ','
 nnoremap <C-l> gt
-nnoremap <C-h> gT
+nnoremap <C-r> gT
 nnoremap <leader>t : tabe<CR>
 map <F2> :tabnew<CR>
 map <F3> gt
