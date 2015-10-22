@@ -104,6 +104,7 @@ alias -s bz2='tar -xjvf'
 alias db='dropbox'
 alias dbs='dropbox status'
 alias activate='source ~/venv/bin/activate'
+alias f='fuck'
 
 alias ag='sudo apt-get'
 alias inst='sudo apt-get -y install'
@@ -205,3 +206,5 @@ function stop_tuproxy {
     export http_proxy=
     export HTTPS_PROXY=
 }
+
+eval "$(thefuck --alias)"
