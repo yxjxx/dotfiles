@@ -53,7 +53,7 @@ DEFAULT_USER="yxj"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # }}}
-plugins=(git autojump autopep8 python sudo z web-search osx)
+plugins=(forklift git autojump autopep8 python sudo z web-search osx)
 
 source $ZSH/oh-my-zsh.sh
 
