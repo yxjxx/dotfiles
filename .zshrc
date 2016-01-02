@@ -204,3 +204,6 @@ if [ -d "${PYENV_ROOT}" ]; then
     eval "$(pyenv init -)"
     eval "$(pyenv virtualenv-init -)"
 fi
+
+# fzf for zsh confict with zsh-autosuggestions
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
