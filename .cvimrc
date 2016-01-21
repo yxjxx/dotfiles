@@ -1,0 +1,15 @@
+let completionengines = ['google', 'google-image', 'youtube']
+map <C-7> lastUsedTab
+let blacklists = ["http://douban.fm/*","http://qex.github.io/*","http://qianshan.co/*","https://cloud.digitalocean.com/*","http://dazi.kukuw.com/*","https://courses.edx.org/*","http://www.liaoxuefeng.com/*"]
+set nochangelog
+
+map ; :
+map : ;
+map <C-t> :tabdetach<CR>
+
+site '*://*.javbus.com/*' {
+    call :tabdetach
+}
+
+"let configpath = '/Users/yxj/Dropbox/dotfiles/.cvimrc'
+"set localconfig
