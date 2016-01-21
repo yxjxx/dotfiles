@@ -7,7 +7,7 @@ map ; :
 map : ;
 map <C-t> :tabdetach<CR>
 
-site '*://*.javbus.com/*' {
+site '*://*.javbus.com/' {
     call :tabdetach
 }
 
