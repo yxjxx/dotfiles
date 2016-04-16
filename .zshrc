@@ -53,7 +53,9 @@ DEFAULT_USER="yxj"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # }}}
-plugins=(extract sublime forklift git autojump autopep8 python sudo z web-search osx zsh-syntax-highlighting)
+# https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins
+plugins=(pip pod history brew extract sublime forklift git autojump python sudo z osx zsh-syntax-highlighting)
+# common-aliases debain encode64 gitfast git-extras jsontools vi-mode
 
 source $ZSH/oh-my-zsh.sh
 
@@ -112,6 +114,7 @@ alias search='apt-cache search'
 alias purge='sudo apt-get purge'
 alias update='sudo apt-get update'
 alias upgrade='sudo apt-get -u upgrade'
+alias weather="curl -4 http://wttr.in/wuhan "
 
 ########}}}
 
