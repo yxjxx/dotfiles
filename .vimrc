@@ -173,8 +173,8 @@ Plugin 'vim-scripts/cmdline-completion'
 " cmdline-completion ends}}}
 
 " ag.vim {{{
-Plugin 'rking/ag.vim'
-Plugin 'dyng/ctrlsf.vim'
+"Plugin 'rking/ag.vim'
+"Plugin 'dyng/ctrlsf.vim'
 
 " ag.vim ends}}}
 
