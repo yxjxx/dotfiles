@@ -80,16 +80,16 @@ cmap w!! w !sudo tee > /dev/null %
 filetype off  " required!
 set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
-Bundle 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 
-Bundle 'Raimondi/delimitMate'
-"Bundle 'altercation/vim-colors-solarized'
+Plugin 'Raimondi/delimitMate'
+"Plugin 'altercation/vim-colors-solarized'
 
 " nerdtree nerdtree-tabs{{{
 "':help NERD_tree.txt' for help
-Bundle 'scrooloose/nerdtree'
-"Bundle 'Xuyuanp/git-nerdtree'
-Bundle 'jistr/vim-nerdtree-tabs'
+Plugin 'scrooloose/nerdtree'
+"Plugin 'Xuyuanp/git-nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
 
 map <Leader>n <plug>NERDTreeTabsToggle<CR>
 let g:nerdtree_tabs_open_on_console_startup=0
@@ -101,21 +101,21 @@ let g:NERDTreeUseSimpleIndicator=1
 
 " YouCompleteMe{{{
 
-Bundle 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
 let g:ycm_server_keep_logfiles = 1
 let g:ycm_server_log_level = 'debug'
 
 "YouCompleteMe ends}}}
 
 " python syntax highlight{{{
-Bundle 'hdima/python-syntax'
+Plugin 'hdima/python-syntax'
 
 let python_highlight_all = 1
 
 "python-syntax ends}}}
 
 " make vim a C IDE{{{
-Bundle 'c.vim'
+Plugin 'c.vim'
 
 filetype plugin on
 let g:C_MapLeader  = ','
@@ -123,7 +123,7 @@ let g:C_MapLeader  = ','
 " c.vim end }}}
 
 "highlight brackets {{{
-Bundle 'kien/rainbow_parentheses.vim'
+Plugin 'kien/rainbow_parentheses.vim'
 
 let g:rbpt_colorpairs = [
     \ ['brown',       'RoyalBlue3'],
@@ -154,12 +154,12 @@ au Syntax * RainbowParenthesesLoadBraces
 "parenthese.vim ends}}}
 
 "scrooloose/nerdcommenter{{{
-Bundle 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdcommenter'
 
 " nerdcommenter ends}}}
 
 " vim youdao translater{{{
-"Bundle 'ianva/vim-youdao-translater'
+"Plugin 'ianva/vim-youdao-translater'
 
 "vnoremap <silent> <C-T> <Esc>:Ydv<CR>
 "nnoremap <silent> <C-T> <Esc>:Ydc<CR>
@@ -168,41 +168,42 @@ Bundle 'scrooloose/nerdcommenter'
 " vim-youdao-translater ends}}}
 
 " vim-gitgutter{{{
-Bundle 'airblade/vim-gitgutter'
+Plugin 'airblade/vim-gitgutter'
 
 " }}}
 
 " vim-indent-guides{{{
 " not work well in terminal.
-"Bundle 'nathanaelkane/vim-indent-guides'
+"Plugin 'nathanaelkane/vim-indent-guides'
 
 "let g:indent_guides_enable_on_vim_startup = 1
 " vim-indent-guides ends}}}
 
 " vim-surround{{{
-Bundle 'tpope/vim-surround'
+Plugin 'tpope/vim-surround'
 
 " vim-surround ends}}}
 
 " cmdline-completion{{{
-Bundle 'vim-scripts/cmdline-completion'
+Plugin 'vim-scripts/cmdline-completion'
 
 " cmdline-completion ends}}}
 
 " ag.vim {{{
-Bundle 'rking/ag.vim'
-Bundle 'dyng/ctrlsf.vim'
+Plugin 'rking/ag.vim'
+Plugin 'dyng/ctrlsf.vim'
 
 " ag.vim ends}}}
 
-Bundle 'ervandew/supertab'
-Bundle 'scrooloose/syntastic'
-Bundle 'fholgado/minibufexpl.vim'
-Bundle 'vim-scripts/taglist.vim'
-Bundle 'mbbill/undotree'
-Bundle 'vim-scripts/gdbmgr'
-Bundle 'vim-scripts/better-snipmate-snippet'
-Bundle 'parkr/vim-jekyll'
+Plugin 'ervandew/supertab'
+Plugin 'scrooloose/syntastic'
+Plugin 'fholgado/minibufexpl.vim'
+Plugin 'vim-scripts/taglist.vim'
+Plugin 'mbbill/undotree'
+Plugin 'vim-scripts/gdbmgr'
+Plugin 'vim-scripts/better-snipmate-snippet'
+Plugin 'parkr/vim-jekyll'
+Plugin 'rizzatti/dash.vim'
 
 call vundle#end()   "required
 filetype plugin indent on  " required!
