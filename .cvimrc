@@ -11,5 +11,5 @@ site '*://*.javbus.com/' {
     call :tabdetach
 }
 
-"let configpath = '/Users/yxj/Dropbox/dotfiles/.cvimrc'
-"set localconfig
+let configpath = '/Users/yxj/Dropbox/dotfiles/.cvimrc'
+set localconfig
