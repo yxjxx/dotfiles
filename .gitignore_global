@@ -51,6 +51,7 @@ Thumbs.db
 #######################
 .idea/
 CMakeLists.txt
+cmake-build-debug/
 
 # Objective-C and Swift
 # Xcode
